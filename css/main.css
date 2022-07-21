@@ -631,14 +631,16 @@ body{
 .site-form{
   margin-top: 36px;
   margin-left: 340px;
+  height: 100px;
   display: flex;
   align-items: flex-start;
-
+  
   
   
 }
 .site-input-label{
   width: 318px;
+  /* height: 100px; */
   background-color: #FA5959;
   margin-right: 16px;
   
@@ -651,7 +653,8 @@ body{
   line-height: 28px;
   letter-spacing: 0.25px;
   
-  color: rgba(36, 42, 69, 0.250109);
+  /* color: rgba(36, 42, 69, 0.250109); */
+   color: #242A45;
   border-radius: 5px;
   border: 2px solid transparent;
   
@@ -670,10 +673,15 @@ body{
 }
 
 .user-input:not(:placeholder-shown):not(:focus):invalid ~ .user-input-text{
-  display: inline-block;
+  display: block;
 }
 .user-input:not(:placeholder-shown):not(:focus):invalid{
   border: 2px solid #FA5959;
+}
+.user-input:not(:placeholder-shown):not(:focus):invalid{
+  background-image: url("../images/error-disc.png");
+  background-repeat: no-repeat;
+  background-position: 280px 15px;
 }
 
 
@@ -683,16 +691,26 @@ body{
   padding: 10px 24px 12px 24px;
   border: none;
   font-weight: 500;
-font-size: 14px;
-line-height: 28px;
-text-align: center;
-letter-spacing: 0.25px;
-color: #FFFFFF;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+  
+  background: #FA5959;
+  border: 2px solid transparent;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  
+}
+.form-btn:hover{
+  color: #FA5959;
 
-background: #FA5959;
+  background: #FFFFFF;
+border: 2px solid #FA5959;
 box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
 border-radius: 5px;
-  
+
 }
 
 
@@ -719,18 +737,18 @@ border-radius: 5px;
 
 .site-footer{
   background: #242A45;
-
+  
 }
 .footer-wrapper{
- padding-top: 38px;
- padding-bottom: 38px;
+  padding-top: 38px;
+  padding-bottom: 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
 }
 .site-footer-img-link{
-
+  
 }
 .header-list-f{
   display: flex;
@@ -739,12 +757,12 @@ border-radius: 5px;
 .header-list-name-f{
   text-decoration: none;
   font-weight: 400;
-font-size: 13px;
-line-height: 17px;
-text-align: right;
-letter-spacing: 1.5px;
-
-color: #FFFFFF;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 1.5px;
+  
+  color: #FFFFFF;
 }
 .header-list-name-f:hover{
   color: #FA5959;
@@ -752,12 +770,12 @@ color: #FFFFFF;
 .foter-social-wrapper{
   display: flex;
   align-items: center;
-
+  
 }
 .site-footer-link{
   padding-right: 40px;
   color: #FFFFFF;
-
+  
 }
 .site-footer-img:hover{
   color: #FA5959;
